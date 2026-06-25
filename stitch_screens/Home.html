@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vanguard Predictor - Education is a Right</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&amp;family=Space+Grotesk:wght@700&amp;family=Work+Sans:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#fff8f6",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#e5e2dd",
+                        "primary-fixed": "#ffdad4",
+                        "surface-variant": "#fedad5",
+                        "surface-container-high": "#ffe2dd",
+                        "inverse-surface": "#412b28",
+                        "tertiary-fixed-dim": "#c9c6c2",
+                        "on-tertiary-container": "#efece8",
+                        "outline": "#936e68",
+                        "secondary-container": "#e2dfde",
+                        "inverse-primary": "#ffb4a8",
+                        "secondary": "#5f5e5e",
+                        "primary": "#aa0000",
+                        "inverse-on-surface": "#ffedea",
+                        "primary-container": "#d80000",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fff8f6",
+                        "surface-container-highest": "#fedad5",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-tertiary-fixed-variant": "#474743",
+                        "on-primary-fixed-variant": "#930000",
+                        "outline-variant": "#e8bcb5",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-surface-variant": "#5e3f3a",
+                        "on-primary-container": "#ffe7e3",
+                        "tertiary": "#54534f",
+                        "surface-container-low": "#fff0ee",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#474746",
+                        "surface-container": "#ffe9e6",
+                        "on-surface": "#291714",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#291714",
+                        "surface-dim": "#f5d2cc",
+                        "on-primary-fixed": "#410000",
+                        "on-tertiary-fixed": "#1c1c19",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#6c6b67",
+                        "surface-tint": "#c00000",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#636262",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "on-error-container": "#93000a",
+                        "background": "#fff8f6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "1rem",
+                        "gutter": "1.5rem",
+                        "grid-margin": "2rem",
+                        "stack-lg": "4rem",
+                        "border-thick": "4px",
+                        "border-ultra": "8px"
+                    },
+                    "fontFamily": {
+                        "label-bold": ["Space Grotesk"],
+                        "headline-lg": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "body-lg": ["Work Sans"],
+                        "display-xl": ["Montserrat"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "body-md": ["Work Sans"]
+                    },
+                    "fontSize": {
+                        "label-bold": ["14px", { "lineHeight": "16px", "fontWeight": "700" }],
+                        "headline-lg": ["64px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-md": ["32px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-lg": ["20px", { "lineHeight": "30px", "fontWeight": "400" }],
+                        "display-xl": ["120px", { "lineHeight": "110px", "letterSpacing": "-0.04em", "fontWeight": "900" }],
+                        "headline-lg-mobile": ["42px", { "lineHeight": "44px", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #fff8f6;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+        .hard-shadow {
+            box-shadow: 8px 8px 0px 0px rgba(41, 23, 20, 1);
+        }
+        .hard-shadow-lg {
+            box-shadow: 12px 12px 0px 0px rgba(41, 23, 20, 1);
+        }
+        .texture-overlay {
+            mix-blend-mode: multiply;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background overflow-x-hidden">
+<!-- TopAppBar -->
+<nav class="bg-primary text-on-primary docked full-width top-0 border-b-border-ultra border-on-background sticky z-50">
+<div class="flex justify-between items-center w-full px-grid-margin py-4">
+<div class="text-headline-md font-headline-md font-black text-on-primary tracking-tighter uppercase">
+                VANGUARD PREDICTOR
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-primary underline decoration-4 underline-offset-8 font-black font-label-bold text-label-bold" href="#">Predictor</a>
+<a class="text-on-primary opacity-80 hover:opacity-100 font-bold hover:bg-on-primary hover:text-primary transition-colors duration-150 px-2 py-1 font-label-bold text-label-bold" href="#">Colleges</a>
+<a class="text-on-primary opacity-80 hover:opacity-100 font-bold hover:bg-on-primary hover:text-primary transition-colors duration-150 px-2 py-1 font-label-bold text-label-bold" href="#">Branches</a>
+<a class="text-on-primary opacity-80 hover:opacity-100 font-bold hover:bg-on-primary hover:text-primary transition-colors duration-150 px-2 py-1 font-label-bold text-label-bold" href="#">Manifesto</a>
+</div>
+<button class="hidden md:block bg-on-background text-surface font-label-bold text-label-bold uppercase px-6 py-3 border-thick border-on-background hard-shadow hover:translate-y-1 hover:shadow-none transition-all duration-150">
+                JOIN ACTION
+            </button>
+<button class="md:hidden flex flex-col gap-1.5 p-2">
+<span class="w-6 h-1 bg-on-primary block"></span>
+<span class="w-6 h-1 bg-on-primary block"></span>
+<span class="w-6 h-1 bg-on-primary block"></span>
+</button>
+</div>
+</nav>
+<!-- Red Banner Slogan -->
+<div class="w-full bg-primary-container text-on-primary py-stack-sm border-b-border-thick border-on-background transform -skew-y-2 mt-8 z-10 relative overflow-hidden">
+<div class="flex whitespace-nowrap animate-[marquee_20s_linear_infinite]">
+<span class="font-headline-md text-headline-md md:font-display-xl md:text-display-xl uppercase font-black px-4">EDUCATION IS A RIGHT, NOT A PRIVILEGE!</span>
+<span class="font-headline-md text-headline-md md:font-display-xl md:text-display-xl uppercase font-black px-4">EDUCATION IS A RIGHT, NOT A PRIVILEGE!</span>
+</div>
+</div>
+<style>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+<!-- Main Content Canvas -->
+<main class="w-full max-w-7xl mx-auto px-gutter md:px-grid-margin py-stack-lg flex flex-col gap-stack-lg z-20 relative">
+<!-- Hero Section: Rank Predictor -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center border-border-ultra border-on-background p-8 bg-surface-container-lowest hard-shadow-lg relative">
+<!-- Diagonal accent tape -->
+<div class="absolute -top-4 -left-4 w-32 h-8 bg-primary transform -rotate-45 border-thick border-on-background z-30"></div>
+<div class="col-span-1 md:col-span-7 flex flex-col gap-stack-sm">
+<span class="bg-on-background text-surface font-label-bold text-label-bold px-3 py-1 uppercase w-max tracking-widest">Tool 01</span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-display-xl md:text-display-xl uppercase font-black leading-none break-words text-primary">
+                    RANK<br/>PREDICTOR
+                </h1>
+<p class="font-body-lg text-body-lg max-w-xl font-bold bg-surface-container-highest p-4 border-l-border-thick border-on-background">
+                    Reclaim your future. Enter your expected score and bypass the gatekeepers to uncover your probable standing. Data belongs to the masses.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-5 bg-surface p-6 border-thick border-on-background relative">
+<form class="flex flex-col gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold uppercase tracking-wider" for="rank-input">ENTER EXPECTED SCORE / RANK</label>
+<input class="bg-surface-container-lowest border-b-border-thick border-on-background border-t-0 border-l-0 border-r-0 focus:ring-0 focus:border-primary focus:bg-surface-variant font-headline-md text-headline-md p-4 transition-colors" id="rank-input" placeholder="e.g. 85000" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold uppercase tracking-wider" for="exam-select">SELECT EXAMINATION</label>
+<select class="bg-surface-container-lowest border-b-border-thick border-on-background border-t-0 border-l-0 border-r-0 focus:ring-0 focus:border-primary focus:bg-surface-variant font-body-lg text-body-lg p-4 appearance-none cursor-pointer" id="exam-select">
+<option>JEE Main 2024</option>
+<option>NEET UG</option>
+<option>State CET</option>
+</select>
+</div>
+<button class="mt-4 bg-primary-container text-on-primary font-label-bold text-label-bold uppercase py-6 border-thick border-on-background hard-shadow hover:translate-y-2 hover:shadow-none transition-all duration-150 w-full text-center text-xl tracking-widest" type="button">
+                        PREDICT NOW
+                    </button>
+</form>
+</div>
+</section>
+<!-- The Arsenal Grid -->
+<section class="flex flex-col gap-6 pt-12">
+<h2 class="font-headline-lg text-headline-lg uppercase font-black border-b-border-ultra border-on-background pb-2 w-max">
+                THE ARSENAL
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- College Intel Card -->
+<div class="border-thick border-on-background p-6 bg-surface-container-highest flex flex-col gap-4 group hover:bg-surface-variant transition-colors relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+<div class="flex justify-between items-start z-10">
+<span class="bg-on-background text-surface font-label-bold text-label-bold px-2 py-1 uppercase">Database</span>
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase font-bold z-10 mt-8">COLLEGE INTEL</h3>
+<p class="font-body-md text-body-md border-t-border-thick border-on-background pt-4 z-10">
+                        Unfiltered access to cutoff histories, fee structures, and placement realities. We expose the statistics they hide.
+                    </p>
+<button class="self-start mt-4 font-label-bold text-label-bold uppercase border-b-4 border-primary pb-1 hover:text-primary transition-colors z-10 flex items-center gap-2">
+                        EXPLORE INSTITUTIONS <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<!-- Branch Audit Card -->
+<div class="border-thick border-on-background p-6 bg-surface-container-highest flex flex-col gap-4 group hover:bg-surface-variant transition-colors relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">account_tree</span>
+</div>
+<div class="flex justify-between items-start z-10">
+<span class="bg-on-background text-surface font-label-bold text-label-bold px-2 py-1 uppercase">Analysis</span>
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">account_tree</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase font-bold z-10 mt-8">BRANCH AUDIT</h3>
+<p class="font-body-md text-body-md border-t-border-thick border-on-background pt-4 z-10">
+                        Stop following the herd. Analyze core vs. IT sector trends. Real world value metrics for every discipline.
+                    </p>
+<button class="self-start mt-4 font-label-bold text-label-bold uppercase border-b-4 border-primary pb-1 hover:text-primary transition-colors z-10 flex items-center gap-2">
+                        COMPARE BRANCHES <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Why We Built This / Mural Section -->
+<section class="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-8 border-border-ultra border-on-background bg-surface-container-lowest">
+<div class="lg:col-span-5 p-8 flex flex-col justify-center gap-6 border-b-border-ultra lg:border-b-0 lg:border-r-border-ultra border-on-background">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg uppercase font-black leading-tight">
+                    WHY WE<br/><span class="text-primary">BUILT THIS</span>
+</h2>
+<ol class="flex flex-col gap-4 list-none mt-4">
+<li class="border-b-border-thick border-on-background pb-4 flex gap-4 items-start">
+<span class="font-headline-md text-headline-md font-black text-primary">01</span>
+<p class="font-body-md text-body-md font-bold mt-1">Information asymmetry is a tool of oppression. We level the playing field.</p>
+</li>
+<li class="border-b-border-thick border-on-background pb-4 flex gap-4 items-start">
+<span class="font-headline-md text-headline-md font-black text-primary">02</span>
+<p class="font-body-md text-body-md font-bold mt-1">Consultancies profit off student anxiety. Our tools are free and open source.</p>
+</li>
+<li class="flex gap-4 items-start">
+<span class="font-headline-md text-headline-md font-black text-primary">03</span>
+<p class="font-body-md text-body-md font-bold mt-1">Collective data gathering defeats proprietary algorithms.</p>
+</li>
+</ol>
+</div>
+<div class="lg:col-span-7 relative h-96 lg:h-auto min-h-[400px] overflow-hidden group">
+<!-- User's requested mural image -->
+<img alt="" class="w-full h-full object-cover grayscale contrast-125 mix-blend-multiply transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpag4BhoCFoZ-IfARk5T8J0gnVNeSxCkTVzMVfYmImEj0DcxTKHD62aIemHM5nBKcqQxVDrvmXj9-SVk51GCJBrTmOUAQL63HKoFuleN3uoI9TFaCftjhBfA3dDFd2HgCIqXLaeb8OLA2tcGpwlxHghbfIlP4ljQVuRzAXYpxrECCjALhImFHsPHwvQN-IAyd2qY7pLZHou6nJzjd4XgsFvpzX0N1ghsafJzcII6vUEYTi5YlGO1ODMZam9iv-tM78pJ0AKIYFmeE"/>
+<!-- Red duotone overlay -->
+<div class="absolute inset-0 bg-primary opacity-40 mix-blend-color z-10 pointer-events-none"></div>
+<div class="absolute inset-0 bg-black opacity-20 z-10 pointer-events-none"></div>
+<!-- Stencil Text Overlay -->
+<div class="absolute bottom-6 left-6 z-20 transform -rotate-2">
+<span class="bg-primary text-on-primary font-headline-md text-headline-md uppercase font-black px-4 py-2 border-thick border-on-background">
+                        MANIFESTO
+                    </span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-on-background text-surface full-width border-t-border-ultra border-primary w-full py-stack-lg px-grid-margin flex flex-col items-center gap-8 mt-24">
+<div class="font-headline-md text-primary font-black uppercase tracking-widest border-b-border-thick border-surface-variant pb-4 w-full text-center max-w-4xl">
+            VANGUARD COLLECTIVE
+        </div>
+<div class="flex flex-wrap justify-center gap-6 md:gap-12 w-full max-w-4xl">
+<a class="font-label-bold text-label-bold uppercase text-surface-variant hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="font-label-bold text-label-bold uppercase text-surface-variant hover:text-primary transition-colors" href="#">Open Data</a>
+<a class="font-label-bold text-label-bold uppercase text-surface-variant hover:text-primary transition-colors" href="#">Terms of Struggle</a>
+<a class="font-label-bold text-label-bold uppercase text-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="text-center font-label-bold text-label-bold uppercase tracking-widest text-surface-variant mt-4">
+            EDUCATION IS A RIGHT, NOT A PRIVILEGE © 2024 VANGUARD COLLECTIVE
+        </div>
+</footer>
+</body></html>

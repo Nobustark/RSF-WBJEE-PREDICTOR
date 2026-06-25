@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Smart Guidance &amp; Mission - RSF PREDICTOR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Space+Grotesk:wght@300..700&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#efece8",
+                      "secondary": "#5f5e5e",
+                      "surface-container": "#ffe9e6",
+                      "on-surface-variant": "#5e3f3a",
+                      "surface-container-high": "#ffe2dd",
+                      "tertiary-fixed-dim": "#c9c6c2",
+                      "on-primary-container": "#ffe7e3",
+                      "outline": "#936e68",
+                      "on-error": "#ffffff",
+                      "surface-container-low": "#fff0ee",
+                      "inverse-on-surface": "#ffedea",
+                      "secondary-fixed": "#e5e2e1",
+                      "primary-fixed-dim": "#ffb4a8",
+                      "on-tertiary-fixed-variant": "#474743",
+                      "surface-bright": "#fff8f6",
+                      "primary-container": "#d80000",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "tertiary": "#54534f",
+                      "inverse-primary": "#ffb4a8",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-container": "#636262",
+                      "surface-tint": "#c00000",
+                      "on-background": "#291714",
+                      "primary": "#aa0000",
+                      "on-primary-fixed": "#410000",
+                      "surface": "#fff8f6",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed-variant": "#474746",
+                      "error-container": "#ffdad6",
+                      "on-error-container": "#93000a",
+                      "inverse-surface": "#412b28",
+                      "on-tertiary": "#ffffff",
+                      "on-surface": "#291714",
+                      "tertiary-container": "#6c6b67",
+                      "tertiary-fixed": "#e5e2dd",
+                      "outline-variant": "#e8bcb5",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "surface-variant": "#fedad5",
+                      "on-primary-fixed-variant": "#930000",
+                      "surface-container-highest": "#fedad5",
+                      "background": "#fff8f6",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-fixed": "#1c1c19",
+                      "on-primary": "#ffffff",
+                      "surface-dim": "#f5d2cc",
+                      "secondary-container": "#e2dfde",
+                      "primary-fixed": "#ffdad4"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "1.5rem",
+                      "grid-margin": "2rem",
+                      "stack-sm": "1rem",
+                      "stack-lg": "4rem",
+                      "border-ultra": "8px",
+                      "border-thick": "4px"
+              },
+              "fontFamily": {
+                      "label-bold": [
+                              "Space Grotesk"
+                      ],
+                      "display-xl": [
+                              "Montserrat"
+                      ],
+                      "headline-md": [
+                              "Montserrat"
+                      ],
+                      "headline-lg": [
+                              "Montserrat"
+                      ],
+                      "body-md": [
+                              "Work Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Montserrat"
+                      ],
+                      "body-lg": [
+                              "Work Sans"
+                      ]
+              },
+              "fontSize": {
+                      "label-bold": [
+                              "14px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-xl": [
+                              "120px",
+                              {
+                                      "lineHeight": "110px",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "900"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "68px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "42px",
+                              {
+                                      "lineHeight": "44px",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "30px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-stroke-primary {
+            -webkit-text-stroke: 2px #aa0000;
+            color: transparent;
+        }
+        .text-stroke-black {
+            -webkit-text-stroke: 2px #1c1b1b;
+            color: transparent;
+        }
+        .hard-shadow {
+            box-shadow: 8px 8px 0px 0px #1c1b1b;
+        }
+        .hard-shadow-red {
+            box-shadow: 8px 8px 0px 0px #d80000;
+        }
+        .diagonal-stripe {
+            background: repeating-linear-gradient(
+                45deg,
+                #1c1b1b,
+                #1c1b1b 10px,
+                transparent 10px,
+                transparent 20px
+            );
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col overflow-x-hidden">
+<!-- TopAppBar -->
+<nav class="bg-background dark:bg-background docked full-width top border-b-8 border-on-secondary-fixed flex justify-between items-center w-full h-20 px-8 max-w-full sticky top-0 z-50">
+<div class="bg-on-secondary-fixed text-primary px-4 py-2 text-headline-md font-headline-md font-black border-4 border-on-secondary-fixed">
+            RSF PREDICTOR
+        </div>
+<div class="hidden md:flex gap-8 items-center h-full">
+<a class="text-on-surface hover:text-primary transition-colors text-label-bold font-label-bold uppercase flex items-center h-full hover:bg-primary-container hover:text-on-primary-container px-4" href="#">PREDICT</a>
+<a class="text-on-surface hover:text-primary transition-colors text-label-bold font-label-bold uppercase flex items-center h-full hover:bg-primary-container hover:text-on-primary-container px-4" href="#">CUTOFFS</a>
+<a class="text-on-surface hover:text-primary transition-colors text-label-bold font-label-bold uppercase flex items-center h-full hover:bg-primary-container hover:text-on-primary-container px-4" href="#">COLLEGES</a>
+<a class="text-primary border-b-4 border-primary pb-1 text-label-bold font-label-bold uppercase flex items-center h-full transform scale-95 duration-100" href="#">HISTORY</a>
+</div>
+<button class="bg-primary-container text-on-primary font-label-bold text-label-bold uppercase px-6 py-2 border-border-thick border-on-secondary-fixed hard-shadow hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all">
+            LOGIN
+        </button>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col w-full relative">
+<!-- Hero Section: The Mission -->
+<section class="w-full min-h-[819px] flex flex-col md:flex-row border-b-8 border-on-secondary-fixed">
+<!-- Left: Typography Block -->
+<div class="w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center border-b-8 md:border-b-0 md:border-r-8 border-on-secondary-fixed relative overflow-hidden bg-surface-variant">
+<div class="absolute top-0 right-0 w-32 h-32 diagonal-stripe opacity-20"></div>
+<h1 class="text-display-xl font-display-xl uppercase text-on-secondary-fixed leading-none mb-8 relative z-10 break-words mix-blend-multiply">
+                    GUIDE<br/>
+<span class="text-primary">UNITE</span><br/>
+                    CONQUER
+                </h1>
+<div class="border-t-4 border-on-secondary-fixed pt-6 mt-auto">
+<p class="text-headline-md font-headline-md text-on-secondary-fixed uppercase leading-tight">
+                        We reject the commodification of education. This predictor is a tool for the masses, built by students, for students.
+                    </p>
+</div>
+</div>
+<!-- Right: Image Block -->
+<div class="w-full md:w-1/2 relative bg-on-secondary-fixed h-[614px] md:h-auto overflow-hidden group">
+<img alt="Revolutionary poster depicting unified workers and students marching with flags" class="w-full h-full object-cover filter grayscale contrast-150 group-hover:grayscale-0 transition-all duration-500 opacity-80 mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd_paaXdI83gIPjtMeoBkvNlGsmCOuUHgbUaIS-tGtUejrC_XdGMkLSUlNXdgpJ_ckTuY-4Um3DWGizA-ctBB8X36V0HvnxX1xuSi0hjpS7F4PPq8qAFOAQTQBf84GInV5HQEYKUCL-oS8-y70-llvMFEGxZqF0-zeFLawgWqzqWUTJYBEjPMi6LbkP49i0i2AU7PxtwUiE9NTfOuvpjdHtTPSrE5Qcdtlv-VZJ4Iay6ecmOXSTCVvMzY3ZXYwugjj2JuywVWctzk"/>
+<div class="absolute inset-0 bg-primary mix-blend-color opacity-40"></div>
+<!-- Overlay Banner -->
+<div class="absolute bottom-16 -left-8 bg-primary-container border-4 border-on-secondary-fixed p-6 transform -rotate-6 hard-shadow">
+<h2 class="text-headline-lg font-headline-lg text-on-primary uppercase m-0 leading-none">ABOUT RSF</h2>
+</div>
+</div>
+</section>
+<!-- Counseling Process Section: Constructivist Grid -->
+<section class="w-full py-20 px-8 md:px-16 bg-surface-bright relative">
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-16 uppercase border-b-8 border-on-secondary-fixed pb-4 inline-block">The Path Forward</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 relative z-10">
+<!-- Step 1 -->
+<div class="md:col-span-5 bg-surface border-4 border-on-secondary-fixed p-8 hard-shadow relative transform md:-translate-y-8">
+<div class="absolute -top-10 -left-6 text-[100px] font-display-xl font-black text-primary leading-none text-stroke-black">1</div>
+<h3 class="text-headline-md font-headline-md uppercase mt-8 mb-4 border-b-4 border-on-secondary-fixed pb-2">Analyze Rank</h3>
+<p class="text-body-lg font-body-lg">Input your WBJEE metrics. The algorithm cross-references historical data to find your true standing among peers.</p>
+</div>
+<!-- Connector Arrow (Desktop) -->
+<div class="hidden md:flex md:col-span-2 items-center justify-center">
+<span class="material-symbols-outlined text-[80px] text-primary transform rotate-45">arrow_downward</span>
+</div>
+<!-- Step 2 -->
+<div class="md:col-span-5 bg-on-secondary-fixed text-on-primary p-8 hard-shadow-red relative transform md:translate-y-12">
+<div class="absolute -top-10 -right-6 text-[100px] font-display-xl font-black text-surface leading-none text-stroke-primary">2</div>
+<h3 class="text-headline-md font-headline-md uppercase mt-8 mb-4 border-b-4 border-surface pb-2 text-primary">Target Colleges</h3>
+<p class="text-body-lg font-body-lg">Identify institutions where the working class and peasantry have historically found footing. Build your preference list strategically.</p>
+</div>
+<!-- Step 3 -->
+<div class="md:col-span-7 bg-primary-container text-on-primary border-4 border-on-secondary-fixed p-8 hard-shadow relative mt-8 md:mt-24">
+<div class="absolute -top-10 left-1/2 transform -translate-x-1/2 text-[100px] font-display-xl font-black text-surface leading-none text-stroke-black">3</div>
+<h3 class="text-headline-md font-headline-md uppercase mt-8 mb-4 border-b-4 border-surface pb-2 text-center">Execute Strategy</h3>
+<p class="text-body-lg font-body-lg text-center max-w-2xl mx-auto">Lock in your choices during counseling rounds. Do not yield to pressure from private, profit-driven institutions. Stand firm on your calculated path.</p>
+</div>
+<!-- Decorative Image -->
+<div class="md:col-span-5 relative mt-8 md:mt-24 h-64 border-4 border-on-secondary-fixed overflow-hidden bg-surface-dim">
+<img alt="Raw, passionate handwriting spelling out a revolutionary slogan on a rough wall" class="w-full h-full object-cover filter contrast-125 sepia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzbCWjUYJ7v6dPgpvTclzK2btKYT7SHxcKfpvSx68zB51V5dHvaJvDJfNnFUVYAomtcuwm1yJlyBSdfQwO40j9IQJXLCy2h9vc8Q0Ufu_6onSRpkAQydSkoEi4LuR8bo2WQ1d3DmURSvTFEeDx44AxzhfSZRv4bMTSxqwn6LsG3qW5VAOSdjkZ6TDdBKecOn4ks4rmc9yjiWDNgKxjD4OKhGT6FcGTYNOLQlZ1KWyPor3pU0NoFplNA53uDk6DVcgIjMbKLsA0rtE"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-primary-container block w-full border-t-8 border-on-secondary-fixed flex flex-col gap-stack-lg px-grid-margin py-stack-lg text-center relative overflow-hidden">
+<!-- Giant Slogan Background -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20">
+<span class="text-[150px] font-display-xl font-black text-on-secondary-fixed whitespace-nowrap leading-none mix-blend-overlay">
+                LONG LIVE MARXISM-LENINISM-MAOISM!
+            </span>
+</div>
+<div class="relative z-10 flex flex-col items-center gap-8">
+<div class="text-headline-lg font-headline-lg font-black text-on-primary uppercase leading-tight max-w-4xl">
+                © 2024 RSF WBJEE PREDICTOR.<br/>
+                LONG LIVE WORKERS PEASANTS STUDENTS UNITY!
+            </div>
+<nav class="flex flex-wrap justify-center gap-6 mt-8 border-t-4 border-on-primary/30 pt-8 w-full max-w-2xl">
+<a class="text-on-primary/80 hover:text-surface transition-all text-body-lg font-body-lg uppercase font-bold" href="#">Privacy Policy</a>
+<a class="text-on-primary/80 hover:text-surface transition-all text-body-lg font-body-lg uppercase font-bold" href="#">Terms of Service</a>
+<a class="text-on-primary/80 hover:text-surface transition-all text-body-lg font-body-lg uppercase font-bold" href="#">Contact Support</a>
+<a class="text-on-primary/80 hover:text-surface transition-all text-body-lg font-body-lg uppercase underline font-bold" href="#">Archive</a>
+</nav>
+</div>
+</footer>
+</body></html>
