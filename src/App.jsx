@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Papa from 'papaparse';
-import { Sparkles, Building2, Microscope, BookOpen, Loader2, AlertCircle } from 'lucide-react';
+import { Sparkles, Building2, Microscope, BookOpen, Loader2, AlertCircle, Phone, Mail } from 'lucide-react';
 
 import Predictor from './components/Predictor';
 import CollegeExplorer from './components/CollegeExplorer';
@@ -183,6 +183,22 @@ function App() {
         <div className="text-headline-md md:text-headline-lg font-headline-md md:font-headline-lg font-black text-on-primary uppercase break-words leading-none">
           © 2024 AN INITIATIVE BY REVOLUTIONARY STUDENTS FRONT. LONG LIVE WORKERS PEASANTS STUDENTS UNITY!
         </div>
+
+        <div className="bg-surface-variant text-on-surface-variant border-4 border-on-surface p-6 max-w-2xl mx-auto mt-4 brutalist-shadow transform rotate-1">
+          <h3 className="font-headline-md text-headline-md uppercase font-black mb-2 border-b-4 border-on-surface pb-2">Reach Out To Us</h3>
+          <p className="font-body-lg text-body-lg font-bold mb-4">Please contact if you need any help and concerns</p>
+          <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 font-label-bold text-label-bold uppercase">
+            <a href="tel:+918420269015" className="flex items-center justify-center gap-2 hover:text-primary transition-colors">
+              <Phone size={20} className="text-primary" />
+              +91 8420269015
+            </a>
+            <a href="mailto:chhatrafauj.rsf@gmail.com" className="flex items-center justify-center gap-2 hover:text-primary transition-colors">
+              <Mail size={20} className="text-primary" />
+              chhatrafauj.rsf@gmail.com
+            </a>
+          </div>
+        </div>
+
         <div className="flex flex-wrap justify-center gap-6 mt-4">
           <a className="text-on-primary/80 hover:text-surface transition-all text-body-lg font-body-lg uppercase font-bold underline decoration-4 underline-offset-4" href="#">Privacy Policy</a>
           <a className="text-on-primary/80 hover:text-surface transition-all text-body-lg font-body-lg uppercase" href="#">Terms of Service</a>
