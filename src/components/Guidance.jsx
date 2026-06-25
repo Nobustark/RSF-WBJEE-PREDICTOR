@@ -21,7 +21,7 @@ const Guidance = () => {
         </div>
         {/* Right: Image Block */}
         <div className="w-full md:w-1/2 relative bg-on-surface h-[400px] md:h-auto overflow-hidden group">
-          <img alt="Revolutionary poster depicting unified workers and students marching with flags" className="w-full h-full object-cover filter grayscale contrast-150 group-hover:grayscale-0 transition-all duration-500 opacity-80 mix-blend-luminosity" src="/rsf/Screenshot 2026-06-25 202229.jpg" />
+          <img alt="Revolutionary poster depicting unified workers and students marching with flags" className="w-full h-full object-cover filter grayscale contrast-150 group-hover:grayscale-0 transition-all duration-500 opacity-80 mix-blend-luminosity" src="./rsf/Screenshot 2026-06-25 202229.jpg" />
           <div className="absolute inset-0 bg-primary mix-blend-color opacity-40"></div>
           {/* Overlay Banner */}
           <div className="absolute bottom-16 -left-8 bg-primary-container border-4 border-on-surface p-6 transform -rotate-6 hard-shadow">
@@ -63,7 +63,7 @@ const Guidance = () => {
 
           {/* Decorative Image */}
           <div className="md:col-span-5 relative mt-8 md:mt-24 h-64 border-4 border-on-surface overflow-hidden bg-surface-dim">
-            <img alt="Raw, passionate handwriting spelling out a revolutionary slogan on a rough wall" className="w-full h-full object-cover filter contrast-125 sepia" src="/rsf/Screenshot 2026-06-25 201739.jpg" />
+            <img alt="Raw, passionate handwriting spelling out a revolutionary slogan on a rough wall" className="w-full h-full object-cover filter contrast-125 sepia" src="./rsf/Screenshot 2026-06-25 201739.jpg" />
           </div>
         </div>
       </section>

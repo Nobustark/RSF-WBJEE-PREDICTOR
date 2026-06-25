@@ -129,7 +129,7 @@ const Predictor = ({ data, categories, rounds, quotas }) => {
         {/* Right Side: Hero Image/Mural (7 cols) */}
         <div className="md:col-span-7 relative bg-surface-variant overflow-hidden min-h-[500px] md:min-h-full flex items-center justify-center">
           <div className="absolute inset-0 z-0">
-            <img alt="Revolutionary mural depicting five leaders in high contrast red and black style" className="w-full h-full object-cover mix-blend-multiply grayscale contrast-150" src="/rsf/Screenshot 2026-06-26 011302.jpg" />
+            <img alt="Revolutionary mural depicting five leaders in high contrast red and black style" className="w-full h-full object-cover mix-blend-multiply grayscale contrast-150" src="./rsf/Screenshot 2026-06-26 011302.jpg" />
             <div className="absolute inset-0 bg-primary-container mix-blend-screen opacity-50"></div>
           </div>
           <div className="z-10 relative p-8">
@@ -162,7 +162,7 @@ const Predictor = ({ data, categories, rounds, quotas }) => {
                 </div>
               </div>
               <div className="relative h-64 md:h-auto brutalist-border-ultra overflow-hidden bg-white">
-                <img alt="Student protest with banners in constructivist art style" className="w-full h-full object-cover filter grayscale contrast-125" src="/rsf/Screenshot 2026-06-25 201942.jpg" />
+                <img alt="Student protest with banners in constructivist art style" className="w-full h-full object-cover filter grayscale contrast-125" src="./rsf/Screenshot 2026-06-25 201942.jpg" />
                 <div className="absolute bottom-0 left-0 bg-primary-container text-on-primary-container p-4 w-3/4 brutalist-border-t border-r-4 border-t-4 border-on-surface">
                   <p className="text-label-bold font-label-bold uppercase">Join the Movement</p>
                 </div>

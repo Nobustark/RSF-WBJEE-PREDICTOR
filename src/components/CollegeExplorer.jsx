@@ -131,7 +131,7 @@ const CollegeExplorer = ({ data, institutes, categories }) => {
         <div className="xl:col-span-4">
           <div className="relative border-border-ultra border-on-background hard-shadow overflow-hidden bg-primary min-h-[400px] flex items-center justify-center p-8 group sticky top-24">
             {/* Background Image */}
-            <div className="absolute inset-0 w-full h-full bg-cover bg-center opacity-40 mix-blend-multiply group-hover:scale-105 transition-transform duration-500" style={{backgroundImage: "url('/rsf/Screenshot 2026-06-25 202121.jpg')"}}></div>
+            <div className="absolute inset-0 w-full h-full bg-cover bg-center opacity-40 mix-blend-multiply group-hover:scale-105 transition-transform duration-500" style={{backgroundImage: "url('./rsf/Screenshot 2026-06-25 202121.jpg')"}}></div>
             {/* Content Overlay */}
             <div className="relative z-10 text-center">
               <h2 className="font-display-xl text-headline-lg-mobile md:text-headline-lg text-on-primary uppercase font-black leading-none mb-4 tracking-tighter transform -skew-x-6 bg-on-background inline-block px-4 py-2">

@@ -24,7 +24,7 @@ function App() {
 
   useEffect(() => {
     // Load CSV Data
-    Papa.parse('/All_Predicted_WBJEE_Ranks.csv', {
+    Papa.parse('./All_Predicted_WBJEE_Ranks.csv', {
       download: true,
       header: true,
       skipEmptyLines: true,
@@ -99,7 +99,7 @@ function App() {
           className="bg-on-secondary-fixed text-primary px-2 py-1 md:px-4 md:py-2 text-body-lg font-body-lg md:text-headline-md md:font-headline-md font-black border-4 border-on-secondary-fixed uppercase tracking-tight cursor-pointer flex items-center gap-2 text-center"
           onClick={() => setActiveView('predictor')}
         >
-          <img src="/rsf/rsf-logo.png" alt="RSF Logo" className="h-6 w-6 md:h-8 md:w-8 object-cover rounded-full flex-shrink-0" />
+          <img src="./rsf/rsf-logo.png" alt="RSF Logo" className="h-6 w-6 md:h-8 md:w-8 object-cover rounded-full flex-shrink-0" />
           <span className="hidden sm:inline">WBJEE COLLEGE AND BRANCH PREDICTOR</span>
           <span className="sm:hidden">WBJEE PREDICTOR</span>
         </div>

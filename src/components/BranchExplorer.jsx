@@ -76,7 +76,7 @@ const BranchExplorer = ({ data, branches, categories }) => {
         <div className="xl:col-span-4 hidden xl:block">
           <div className="relative border-border-ultra border-on-background hard-shadow overflow-hidden bg-primary min-h-[400px] flex items-center justify-center p-8 group sticky top-24">
             <div className="absolute inset-0 bg-primary opacity-40 mix-blend-color z-10 pointer-events-none"></div>
-            <div className="absolute inset-0 w-full h-full bg-cover bg-center opacity-80 mix-blend-multiply group-hover:scale-105 transition-transform duration-500" style={{backgroundImage: "url('/rsf/Screenshot 2026-06-25 202201.jpg')"}}></div>
+            <div className="absolute inset-0 w-full h-full bg-cover bg-center opacity-80 mix-blend-multiply group-hover:scale-105 transition-transform duration-500" style={{backgroundImage: "url('./rsf/Screenshot 2026-06-25 202201.jpg')"}}></div>
             
             <div className="relative z-10 text-center">
               <div className="bg-on-background text-on-primary font-headline-md text-headline-md uppercase font-black px-4 py-2 border-thick border-on-background inline-block transform -rotate-3">
