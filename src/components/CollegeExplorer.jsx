@@ -31,7 +31,7 @@ const CollegeExplorer = ({ data, institutes, categories }) => {
     <div className="flex flex-col gap-stack-lg w-full">
       {/* Search Section */}
       <section className="w-full z-20">
-        <div className="bg-primary p-8 border-border-ultra border-on-background hard-shadow transform -skew-x-2 relative">
+        <div className="bg-primary p-4 md:p-8 border-border-ultra border-on-background hard-shadow transform -skew-x-2 relative">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noiseFilter\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noiseFilter)\' opacity=\'0.05\'/%3E%3C/svg%3E')] opacity-50 mix-blend-overlay pointer-events-none"></div>
           <h1 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-primary uppercase mb-6 transform skew-x-2 tracking-tighter relative z-10">
             EXPLORE THE INSTITUTIONS
@@ -70,22 +70,22 @@ const CollegeExplorer = ({ data, institutes, categories }) => {
       </section>
 
       {/* Grid Layout */}
-      <section className="grid grid-cols-1 xl:grid-cols-12 gap-8 relative z-10">
+      <section className="grid grid-cols-1 xl:grid-cols-12 gap-4 md:gap-8 relative z-10">
         {/* Results Container (Spans 8 columns) */}
-        <div className="xl:col-span-8 flex flex-col gap-8">
+        <div className="xl:col-span-8 flex flex-col gap-4 md:gap-8">
           <div className="flex justify-between items-end border-b-border-thick border-on-background pb-2">
             <h2 className="font-headline-md text-headline-md text-on-background uppercase tracking-tighter">RESULTS</h2>
             <span className="font-label-bold text-label-bold bg-on-background text-on-primary px-2 py-1">{filteredResults.length} FOUND</span>
           </div>
 
           {!selectedCollege ? (
-            <div className="bg-surface-variant p-8 border-border-thick border-on-background text-center flex flex-col items-center justify-center min-h-[300px]">
+            <div className="bg-surface-variant p-4 md:p-8 border-border-thick border-on-background text-center flex flex-col items-center justify-center min-h-[300px]">
               <span className="material-symbols-outlined text-6xl text-on-surface-variant mb-4" style={{fontVariationSettings: "'FILL' 1"}}>account_balance</span>
               <h2 className="text-headline-md font-headline-md uppercase font-black text-on-background">Awaiting Orders</h2>
               <p className="text-body-lg font-body-lg text-on-surface-variant">Select an institution from the command console above.</p>
             </div>
           ) : filteredResults.length === 0 ? (
-            <div className="bg-error-container p-8 border-border-thick border-on-background text-center flex flex-col items-center justify-center min-h-[300px]">
+            <div className="bg-error-container p-4 md:p-8 border-border-thick border-on-background text-center flex flex-col items-center justify-center min-h-[300px]">
               <span className="material-symbols-outlined text-6xl text-on-error-container mb-4" style={{fontVariationSettings: "'FILL' 1"}}>warning</span>
               <h2 className="text-headline-md font-headline-md uppercase font-black text-on-error-container">No Data Found</h2>
               <p className="text-body-lg font-body-lg text-on-error-container">The archives are empty for this combination.</p>
@@ -129,7 +129,7 @@ const CollegeExplorer = ({ data, institutes, categories }) => {
 
         {/* Callout Sidebar (Spans 4 columns) */}
         <div className="xl:col-span-4">
-          <div className="relative border-border-ultra border-on-background hard-shadow overflow-hidden bg-primary min-h-[400px] flex items-center justify-center p-8 group sticky top-24">
+          <div className="relative border-border-ultra border-on-background hard-shadow overflow-hidden bg-primary min-h-[400px] flex items-center justify-center p-4 md:p-8 group sticky top-24">
             {/* Background Image */}
             <div className="absolute inset-0 w-full h-full bg-cover bg-center opacity-40 mix-blend-multiply group-hover:scale-105 transition-transform duration-500" style={{backgroundImage: "url('./rsf/Screenshot 2026-06-25 202121.jpg')"}}></div>
             {/* Content Overlay */}

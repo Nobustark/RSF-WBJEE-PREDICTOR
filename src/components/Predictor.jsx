@@ -54,7 +54,7 @@ const Predictor = ({ data, categories, rounds, quotas }) => {
       <section className="grid grid-cols-1 md:grid-cols-12 min-h-screen md:min-h-[819px] w-full border-b-8 border-on-surface relative z-10">
         {/* Left Side: Form Block (5 cols) */}
         <div className="md:col-span-5 bg-surface-bright p-grid-margin flex flex-col justify-center border-r-0 md:border-r-8 border-on-surface relative z-20">
-          <div className="bg-surface brutalist-border-ultra p-8 brutalist-shadow relative bg-white">
+          <div className="bg-surface brutalist-border-ultra p-4 md:p-8 brutalist-shadow relative bg-white">
             <div className="absolute -top-6 -right-6 bg-on-surface text-on-primary px-4 py-1 text-label-bold font-label-bold uppercase transform rotate-6 border-4 border-on-surface">
               TOOL 01
             </div>
@@ -132,7 +132,7 @@ const Predictor = ({ data, categories, rounds, quotas }) => {
             <img alt="Revolutionary mural depicting five leaders in high contrast red and black style" className="w-full h-full object-cover mix-blend-multiply grayscale contrast-150" src="./rsf/Screenshot 2026-06-26 011302.jpg" />
             <div className="absolute inset-0 bg-primary-container mix-blend-screen opacity-50"></div>
           </div>
-          <div className="z-10 relative p-8">
+          <div className="z-10 relative p-4 md:p-8">
             <div className="bg-on-surface text-on-primary p-6 brutalist-border transform -rotate-2 max-w-md ml-auto">
               <h3 className="text-headline-md font-headline-md uppercase mb-2">COLLECTIVE DATA</h3>
               <p className="text-body-md font-body-md">Empowering students through transparent, crowd-sourced cut-off analysis. Break the monopoly on information.</p>
@@ -146,8 +146,8 @@ const Predictor = ({ data, categories, rounds, quotas }) => {
         {!hasPredicted ? (
           <div className="p-grid-margin bg-surface-container-low min-h-[409px] flex items-center justify-center border-b-8 border-on-surface relative">
             <div className="diagonal-stripes absolute inset-0 opacity-20"></div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl relative z-10">
-              <div className="bg-surface brutalist-border-ultra brutalist-shadow p-8 flex flex-col justify-between">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 w-full max-w-6xl relative z-10">
+              <div className="bg-surface brutalist-border-ultra brutalist-shadow p-4 md:p-8 flex flex-col justify-between">
                 <div>
                   <div className="bg-on-surface text-on-primary inline-block px-3 py-1 text-label-bold font-label-bold uppercase mb-4">
                     VANGUARD MISSION
@@ -170,7 +170,7 @@ const Predictor = ({ data, categories, rounds, quotas }) => {
             </div>
           </div>
         ) : (
-          <div className="bg-surface-bright border-8 border-on-surface p-8">
+          <div className="bg-surface-bright border-4 md:border-8 border-on-surface p-4 md:p-8">
             <div className="flex justify-between items-end border-b-8 border-on-surface pb-4 mb-8">
               <h2 className="text-headline-lg font-headline-lg uppercase font-black tracking-tighter">
                 ALLOTMENT <span className="text-primary">INTEL</span>
@@ -181,11 +181,11 @@ const Predictor = ({ data, categories, rounds, quotas }) => {
             </div>
 
             {filteredResults.length === 0 ? (
-              <div className="bg-error-container text-on-error-container p-8 brutalist-border font-headline-md uppercase text-center">
+              <div className="bg-error-container text-on-error-container p-4 md:p-8 brutalist-border font-headline-md uppercase text-center">
                 No matches found. The system gatekeeps. Adjust your rank, category, or round.
               </div>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
                 {filteredResults.map((item, index) => (
                   <div key={index} className="bg-white brutalist-border brutalist-shadow p-6 flex flex-col justify-between hover:bg-surface-variant transition-colors">
                     <div>
